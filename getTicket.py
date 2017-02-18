@@ -9,8 +9,8 @@ order_url = 'http://www.228.com.cn/ticket-225637356.html'
 
 #login
 def login(b):
-    b.fill('username','18538556114')
-    b.fill('password','QP19910425')
+    b.fill('username','**********')
+    b.fill('password','**********')
     b.find_by_id('loginsubmit').click()
     time.sleep(2)
     return b
