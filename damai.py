@@ -8,9 +8,9 @@ sms = 'https://secure.damai.cn/CheckSafety.aspx'
 
 def login(d):
     d.visit(url_login)
-    d.fill('login_email','18538556114')
+    d.fill('login_email','1＊＊＊＊＊')
     d.find_by_css('.layer_text')[1].click()
-    d.fill('login_pwd','QP19910425')
+    d.fill('login_pwd','＊＊＊＊＊')
     d.find_by_css('.login_btn').click()
     time.sleep(3)
     return d
@@ -19,7 +19,7 @@ def login(d):
 def order_confirm(d):
     if d.title == '订单结算页-大麦网':
         if d.is_element_present_by_text('身份证'):
-            d.fill('PapersCard','41132519910425231X')
+            d.fill('PapersCard','＊＊＊＊＊＊＊＊')
             time.sleep(2)
         else:
             pass
